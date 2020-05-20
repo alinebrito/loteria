@@ -1,4 +1,4 @@
-# loteria
+# Loteria
 Gerador de números aleatórios para jogos da Loteria 
 
 ## Instruções
