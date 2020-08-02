@@ -1,9 +1,22 @@
 import random
 import sys
   
+def media(list):
+  return sum(list)/len(list)
+
 def lotofacil():
+  
   print("\n>Lotofacil: ")
-  print(sorted(random.sample(range(1, 26), 15)))
+
+  candidates_1 = list(range(1, 26))
+  result_1 = list(sorted(random.sample(candidates_1, 15)))
+
+  candidates_2 = list(set(candidates_1) - set(result_1))
+  result_2 = sorted(list(random.sample(result_1, 5)) + candidates_2)
+
+  print('\nJogo 1: {}'.format(result_1))
+  print('\nJogo 2: {}'.format(result_2))
+
   pass
 
 def megasena():
