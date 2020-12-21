@@ -29,12 +29,18 @@ def lotomania():
   result = sorted(list(random.sample(range(0, 100), 50)))
   print(result)
 
+def quina():
+  print("\n>Quina: ")
+  result = sorted(list(random.sample(range(1, 81), 5)))
+  print(result)
+
 def menu(option):
   options = {
     0: sys.exit,
     1: megasena,
     2: lotofacil,
-    3: lotomania
+    3: lotomania,
+    4: quina
   }
   options[option]()
   pass
@@ -45,6 +51,7 @@ def run():
   print('1 - Mega-Sena')
   print('2 - Lotofacil')
   print('3 - Lotomania')
+  print('4 - Quina')
   while option != 0:
     option = int(input('\n\nOption: '))
     menu(option)
